@@ -1,0 +1,87 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .headerImg{
+        padding-top: 2rem;
+        transform: translateX(5rem);
+        animation: imgAni 2.5s;
+
+        @keyframes imgAni {
+            0%{
+                transform:translateX(-30rem) ;
+            }
+            
+            100%{
+                transform:translateX(5rem) ;
+            }
+        }
+
+        .touristImg{
+            width: 34rem;
+        }
+
+    }
+    
+    .headerContent{
+        transform: translateX(-5rem);
+        text-align: right;
+        align-content: center;
+        animation: contentAni 2.5s;
+
+        @keyframes contentAni {
+            0%{
+                transform:translateX(40rem) ;
+            }
+            
+            100%{
+                transform:translateX(-5rem) ;
+            }
+        }
+
+        h3{
+            color: #8f8f8f;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        h1{
+            color: $mainColor;
+            font-size: 70px;
+            font-weight: 800;
+        }
+
+        p{
+            &:first-of-type{
+                font-size: 40px;
+                font-weight: 500;
+                width: 40rem;
+            }
+
+            &:last-of-type{
+                color: #888888;
+                font-weight: 600;
+                font-size: 18px;
+                margin-top: 2rem;
+            }
+        }
+
+        button{
+            margin-top: 3rem;
+            padding: 0.8rem 3.5rem;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            transition: 0.4s;
+            cursor: pointer;
+
+            &:hover{
+                color: white;
+                background-color: $mainColor;
+            }
+        }
+    }
+}

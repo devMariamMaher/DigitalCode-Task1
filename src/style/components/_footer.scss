@@ -1,0 +1,150 @@
+footer{
+    margin-top: 15rem;
+    height: 25rem;
+    background-color: $secondaryColor;
+    
+    .footerTop{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-inline: 6rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        
+        .footerContent{
+            text-align: end;
+            position: relative;
+
+            .footerLogo{
+                position: relative;
+
+                h3{
+                    color: $mainColor;
+                    font-weight: 800;
+                }
+                
+                img{
+                    width: 2.5rem;
+                    position: absolute;
+                    top: -1rem;
+                    right: 2rem;
+                    transform: rotate(-10deg);
+                }
+            }
+            
+            .about{
+                width: 22rem;
+            }
+
+            h4{
+                margin-bottom: 1rem;
+                font-weight: 600;
+                font-size: 18px;
+            }
+
+            ul{
+                li{
+                    margin-bottom: 0.5rem;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    a{
+                        color: black;
+                        transition: 0.4s;
+
+                        &:hover{
+                            color: $mainColor;
+                        }    
+                    }
+
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            .appleBtn{
+                position: relative;
+
+                button{
+                    width: 8rem;
+                    height: 2.5rem;
+                    background-color: black;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: white;
+                    border-radius: 4px;
+                    border: 0.5px solid #909090;
+                    padding-left: 1.2rem;
+                    padding-top: 0.4rem;
+                    position: relative;
+                    cursor: pointer;
+                    
+                    .appleIcon{
+                        color: white;
+                        font-size: 24px;
+                        position: absolute;
+                        top: -0rem;
+                        left: 0.5rem;
+                    }
+                }
+                
+                span{
+                    position: absolute;
+                    top: 0.2rem;
+                    left: 2.8rem;
+                    font-size: 8px;
+                    margin-bottom: 0.2rem;
+                    color: white;
+                }
+            }
+
+            .androidBtn{
+                width: 9rem;
+                position: absolute;
+                top: 6rem;
+                left: 0;
+                cursor: pointer;
+            }
+
+            .socialMedia{
+                margin-top: 5rem;
+                position: absolute;
+                left: -3.2rem;
+                font-size: 22px;
+
+                .eachIcon{
+                    margin-left: 1.5rem;
+                    color: #49494B;
+                    transition: 0.4s;
+                    cursor: pointer;
+
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerBottom{
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 2rem;
+
+        p{
+            text-align: center;
+            padding-right: 1rem;
+            position: relative;
+
+            .copyrights{
+                position: absolute;
+                top: 0.5rem;
+                right: 37rem;
+            }
+        }
+    }
+}

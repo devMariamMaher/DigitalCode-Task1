@@ -1,0 +1,48 @@
+.discoverDestinations{
+    margin-top: 7rem;
+    margin-inline: 5rem;
+    display: flex;
+
+    .dDGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        position: relative;
+        gap: 1rem;
+        
+        img{
+            width: 21rem;
+            border-radius: 8px;
+            filter: contrast(80%);
+            
+            &:first-of-type{
+                width: 27rem;
+                border: 7px solid white;
+                border-radius: 8px;
+                position: absolute;
+                top: 5rem;
+                left: 8rem; 
+                filter: saturate(100%);
+                z-index: 80;
+            }
+        }
+    }
+
+    .dDContent{
+        text-align: end;
+        margin-left: 3rem;
+        align-content: center;
+
+        h2{
+            color: $mainColor;
+            font-size: 30px;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 22px;
+            font-weight: 600;
+            color: #4b4b4b;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.features{
+    margin-top: 6rem;
+    margin-inline: 5rem;
+
+    h2{
+        text-align: center;
+        font-size: 32px;
+        position: relative;
+        margin-bottom: 6rem;
+
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            bottom: -1rem;
+        }
+
+        &::before{
+            width: 12.5%;
+            height: 0.5rem;
+            background-color: $mainColor;
+            border-radius: 8px;
+            right: 35.5rem;
+        }
+        
+        &::after{
+            width: 3%;
+            left: 35.8rem;
+            border-style: none none dotted;
+            border-width: 8px;
+            border-color: $mainColor;
+        }
+    }
+
+    .allFeatures{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .eachFeature{
+            img{
+                width: 11rem;
+                margin-left: 3rem;
+            }
+
+            h3{
+                text-align: center;
+                font-weight: 800;
+                font-size: 20px;
+                margin-bottom: 1rem;
+            }
+            
+            p{
+                text-align: center;
+                width: 16rem;
+                color: #8f8f8f;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+nav, .navTabs, .navLinks{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #f9f9f9;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .logo{
+        position: relative;
+
+        h3{
+            color: $mainColor;
+            font-size: 22px;
+        }
+        
+        img{
+            width: 2.5rem;
+            position: absolute;
+            top: -0.8rem;
+            left: -0.5rem;
+            transform: rotate(-10deg);
+        }
+    }
+    
+    .navTabs{
+        .navLinks{
+            li{
+                margin-left: 2rem;
+                font-weight: 600;
+                
+                
+                a{
+                    color: black;
+                    position: relative;
+                    
+                    &.active{
+                        color: $mainColor;
+
+                        &::before, &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -1rem;
+                        }                
+
+                        &::before{
+                            width: 60%;
+                            height: 0.2rem;
+                            background-color: $mainColor;
+                            border-radius: 5px;
+                            right: 0;
+                        }
+                        
+                        &::after{
+                            width: 31%;
+                            left: 0;
+                            border-style: none none dotted;
+                            border-width: 3.8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .language{
+            margin-right: 3rem;
+            position: relative;
+            cursor: pointer;
+
+            .lang{
+                margin-inline: 0.3rem;
+            }
+
+            span{
+                &:last-of-type{
+                    position: absolute;
+                    top: 0.2rem;
+                }
+            }
+        }
+    }
+}
