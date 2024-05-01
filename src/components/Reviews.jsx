@@ -1,22 +1,61 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { GoDotFill } from "react-icons/go";
 
 export const Reviews = () => {
+    const [slideIndex, setSlideIndex] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const sliderRef = useRef();
+
+    useEffect(() => {
+        setActiveIndex(slideIndex);
+    }, [slideIndex]);
+
+    // Function to handle slide change
+    const handleSlideChange = (index) => {
+        setSlideIndex(index);
+    };
+
+    // Function to move to the next slide
+    const nextSlide = () => {
+        sliderRef.current.slickNext();
+    };
+
+    // Function to move to the previous slide
+    const previousSlide = () => {
+        sliderRef.current.slickPrev();
+    };
+
+    const settings = {
+        infinite: false,
+        dots: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // initialSlide: 0,
+    };
+
   return (
     <div className='reviews'>
         <h2>ما يقوله المستخدمين </h2>
 
-        <div className="allReviews">
+        <Slider {...settings} ref={sliderRef} className={activeIndex === slideIndex ? "slide-animate" : ""}>
+        {/* <div className="allReviews"> */}
             <div className="eachReview">
                 <img src="/src/images/user1.png" alt="" />
                 <h3>يوسف إبراهيم</h3>
                 <p>لا يمكنني التحدث عن كتشف بكلمات كافية! كانت تجربتي معه ممتازة من البداية حتى النهاية. واجهة سهلة الاستخدام ومحتوى غني وممتعًا. لقد قمت بحجز الفنادق وحجز التذاكر من خلال التطبيق دون أي مشاكل،. أنا حقًا ممتن لهذا التطبيق!"</p>
 
                 <div className="eachBG1">
-                    <img src="/src/images/review1-bg.png" alt="" />
+                    <div className="bg1"></div>
+                    <div className="bg2"></div>
                 </div>
+
+                {/* <img className='test' src="/src/images/review1-1-bg.png" alt="" /> */}
             </div>
             
             <div className="eachReview">
@@ -25,7 +64,8 @@ export const Reviews = () => {
                 <p>تجربة رائعة! لقد ساعدني كتشف في اكتشاف أماكن جديدة وفريدة خلال رحلتي الأخيرة إلى إيطاليا. كانت المعلومات المقدمة شاملة ومفيدة، وساعدتني في التخطيط لرحلتي بكل يسر وسهولة. أعجبتني أيضًا ميزة التذكيرات التي ساعدتني على عدم تفويت أي مناسبات أو جولات محجوزة مسبقًا. شكرًا لكتشف على جعل تجربة السفر تجربة لا تُنسى!"</p>
 
                 <div className="eachBG2">
-                    <img src="/src/images/review2-bg.png" alt="" />
+                    <div className="bg1"></div>
+                    <div className="bg2"></div>
                 </div>
             </div>
 
@@ -35,14 +75,16 @@ export const Reviews = () => {
                 <p>تطبيق رائع! لقد استخدمته في رحلتي الأخيرة إلى باريس وكانت التجربة مذهلة. تمكنت من العثور على أماكن سياحية رائعة وعروض مذهلة بسهولة. أحببت خاصية التصفية التي سمحت لي بالبحث حسب تفضيلاتي والعثور على الأنشطة التي تناسبني. بالتأكيد سأوصي بهذا التطبيق لأصدقائي!"</p>
 
                 <div className="eachBG3">
-                    <img src="/src/images/review3-bg.png" alt="" />
+                    <div className="bg1"></div>
+                    <div className="bg2"></div>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
+        </Slider>
 
         <div className="arrows">
-            <IoIosArrowForward className='nextArrow'/>
-            <IoIosArrowBack className='prevArrow'/>
+            <IoIosArrowForward className='nextArrow' onClick={nextSlide}/>
+            <IoIosArrowBack className='prevArrow' onClick={previousSlide}/>
         </div>
 
         {/* <div className="navDots">

@@ -7,6 +7,8 @@ export const Header = () => {
     <div className='header'>
         <div className="headerImg">
             <img src="/src/images/tourest-holding-something.png" alt="" className='touristImg'/>
+            <img src="/src/images/airplane.png" alt="" className='airplane1' />
+            <img src="/src/images/airplane.png" alt="" className='airplane2' />
         </div>
 
         <div className="headerContent">

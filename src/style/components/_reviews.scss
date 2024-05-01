@@ -32,69 +32,155 @@
         }
     }
 
-    .allReviews{
-        display: flex;
-        justify-content: space-between;
-        margin-inline: 3rem;
+    // .allReviews{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     margin-inline: 3rem;
 
-        .eachReview{
-            text-align: center;
-            margin-top: 3rem;
-            position: relative;
-            
-            img{
-                width: 5rem;
-                border-radius: 50%;
-                margin-bottom: 1rem;
-            }
-            
-            h3{
-                margin-bottom: 1rem;
+    .slick-slider {
+        .slick-arrow {
+            display: none !important;
+        }
 
-            }
-            
-            p{
-                width: 24rem;
-            }
-    
-            &:nth-child(2){
-                margin-top: 0.5rem;
-    
-            }
+        .slick-list{
+            width: 85rem;
+            height: 32rem;
 
-            .eachBG1{
-                img{
-                    width: 26rem;
-                    position: absolute;
-                    top: 1rem;
-                    left: -3rem;
-                    z-index: -1;
+            .slick-slide{
+                width: 24rem !important;
+                margin-left: 4rem;
+
+                .eachReview{
+                    width: 20rem;
+                    text-align: center;
+                    position: relative;
+                    
+                    img{
+                        width: 5rem;
+                        border-radius: 50%;
+                        margin: 0 auto 1rem;
+                    }
+                    
+                    h3{
+                        margin-bottom: 1rem;
+            
+                    }
+                    
+                    p{
+                        width: 19.5rem;
+                        margin: auto;
+                    }
+
+                    .eachBG1{
+                        .bg1{
+                            width: 22rem;
+                            height: 20.5rem;
+                            background-color: #2b49ff;
+                            position: absolute;
+                            top: 65px;
+                            left: -0.6rem;
+                            transform: skewY(12deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+
+                        .bg2{
+                            width: 23rem;
+                            height: 19rem;
+                            background-color: white;
+                            box-shadow: 3px 4px 20px 0px #595959;
+                            position: absolute;
+                            top: 60px;
+                            left: 0.5rem;
+                            transform: skewY(7deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+                    }
+            
+                    .eachBG2{
+                        .bg1{
+                            width: 22rem;
+                            height: 23.5rem;
+                            background-color: #2b49ff;
+                            position: absolute;
+                            top: 59px;
+                            left: 2.3rem;
+                            transform: skew(16deg, -8deg) rotate(24deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+
+                        .bg2{
+                            width: 25rem;
+                            height: 23rem;
+                            background-color: white;
+                            box-shadow: 3px 4px 20px 0px #595959;
+                            position: absolute;
+                            top: 60px;
+                            left: 0rem;
+                            transform: skew(2deg, 5deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+                    }
+
+                    .eachBG3{
+                        .bg1{
+                            width: 22rem;
+                            height: 21.5rem;
+                            background-color: #2b49ff;
+                            position: absolute;
+                            top: 59px;
+                            left: 2.3rem;
+                            transform: skew(1deg, -8deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+
+                        .bg2{
+                            width: 22rem;
+                            height: 20rem;
+                            background-color: white;
+                            box-shadow: 3px 4px 20px 0px #595959;
+                            position: absolute;
+                            top: 60px;
+                            left: 1.2rem;
+                            transform: skew(1deg, -6deg);
+                            border-radius: 4rem;
+                            z-index: -1;
+                        }
+
+                    }
                 }
             }
-            .eachBG2{
-                img{
-                    width: 26rem;
-                    position: absolute;
-                    top: 3.5rem;
-                    left: -2rem;
-                    z-index: -1;
+        }
+
+        .slick-dots{
+            button:before, .slick-active button:before{
+                font-size: 8px;
+                opacity: 1;
+
+            }
+
+            .slick-active{                
+                button:before {
+                    color: $mainColor;
+                    font-size: 12px;
                 }
             }
-            .eachBG3{
-                img{
-                    width: 26rem;
-                    position: absolute;
-                    top: 1.5rem;
-                    right: -3rem;
-                    z-index: -1;
-                }
+            
+            button:before {
+                color: #96a5ff;
             }
         }
     }
 
+    // }
+
     .prevArrow, .nextArrow{
         position: absolute;
-        bottom: -10rem;
+        bottom: -1.5rem;
         font-size: 22px;
         cursor: pointer;
     }

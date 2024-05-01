@@ -1,4 +1,4 @@
-nav, .navTabs, .navLinks{
+nav, .navTabs, .navLinks, .navIcons{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -38,10 +38,10 @@ nav{
                 margin-left: 2rem;
                 font-weight: 600;
                 
-                
                 a{
                     color: black;
                     position: relative;
+                    transition: 0.3s;
                     
                     &.active{
                         color: $mainColor;
@@ -67,23 +67,163 @@ nav{
                             border-width: 3.8px;
                         }
                     }
+
+                    &:hover{
+                        color: $mainColor;
+                    }
                 }
             }
         }
 
-        .language{
-            margin-right: 3rem;
-            position: relative;
-            cursor: pointer;
+        .navIcons{
+            .language{
+                margin-right: 3rem;
+                position: relative;
+                cursor: pointer;
+    
+                .lang{
+                    margin-inline: 0.3rem;
+                }
+    
+                span{
+                    &:last-of-type{
+                        position: absolute;
+                        top: 0.2rem;
+                    }
+                }
+            }
+    
+            .menuIcon {
+                display: none;
+        
+                #menu{
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
-            .lang{
-                margin-inline: 0.3rem;
+
+
+
+
+
+
+
+
+// responsive
+
+// tablet
+@media (max-width: 991px){
+    nav{
+        position: relative;
+    
+        .logo{
+            h3{
+                font-size: 20px;
+            }
+        }
+        
+        .navTabs{
+            .navLinks{
+                display: unset;
+                background-color: white;
+                box-shadow: 0px 5px 10px #959595;
+                width: 45.5rem;
+                padding: 1rem;
+                position: absolute;
+                top: 5rem;
+                left: 5rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.4s;
+
+                li{
+                    margin-left: 1.5rem;
+                    margin-bottom: 0.5rem;                    
+                    
+                    a{
+                        &.active{
+                            &::before, &::after{
+                                display: none;
+                            }                
+                        }
+                    }
+                }
             }
 
-            span{
-                &:last-of-type{
-                    position: absolute;
-                    top: 0.2rem;
+            &.menuOpen {
+                ul {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+    
+            .navIcons{
+                .menuIcon {
+                    display: block;
+                    margin-right: 1rem;
+            
+                    #menu{
+                        display: none;
+                    }
+
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+// mobile
+@media (max-width: 480px){
+    nav{
+        padding-inline: 2rem;
+
+        .logo{
+            h3{
+                font-size: 18px;
+            }
+        }
+        
+        .navTabs{
+            .navLinks{
+                width: 22.8rem;
+                left: 2rem;
+
+                li{
+                    margin-left: 0.5rem;
+                    margin-bottom: 0.5rem;                    
+                    
+                    a{
+                        font-size: 14px;
+                        &.active{
+                            &::before, &::after{
+                                display: none;
+                            }                
+                        }
+                    }
+                }
+            }
+        }
+
+        .navIcons{
+            .language{
+                .lang{
+                    font-size: 14px;
+                }
+
+                span{
+                    &:first-of-type{
+                        font-size: 14px;
+                    }
                 }
             }
         }

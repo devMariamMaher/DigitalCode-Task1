@@ -17,118 +17,117 @@
         }
 
         &::before{
-            width: 12%;
+            width: 33.55%;
             height: 0.5rem;
             background-color: $mainColor;
             border-radius: 8px;
-            right: 35.5rem;
+            right: 26.5rem;
         }
         
         &::after{
             width: 3%;
-            left: 35.8rem;
+            left: 26.8rem;
             border-style: none none dotted;
             border-width: 8px;
             border-color: $mainColor;
         }
     }
 
-    .allPlaces{
-        display: flex;
-        justify-content: center;
-        gap: 4rem;
-        position: relative;
-        margin-inline: 5rem;
-        
-        .eachPlace{
-            width: 22rem;
-            height: 36rem;
-            border-radius: 1rem;
-            box-shadow: 0px 0px 7px 3px #e2e2e2;
-            align-content: center;
-            overflow: hidden;
-            position: relative;
+    .slick-slider{
+        .slick-arrow{
+            display: none !important;
+        }
+
+        .slick-list{
+            width: 75.5rem;
+            height: 38rem;
+            margin-left: 4.5rem;
             
-            .placeImg{
-                width: 100%;
-                height: 26rem;
-                overflow: hidden;
-                // border-radius: 1rem;
-                position: relative;
-                position: absolute;
-                top: 0;
-                border-top-right-radius: 1rem;
-                border-top-left-radius: 1rem;
-                
-                img{
-                    border-top-right-radius: 1rem;
-                    border-top-left-radius: 1rem;
-                    width: 100%;
-                    // height: 30rem;
-                    margin-bottom: 1rem;
-                    position: absolute;
-                    bottom: -2.5rem;
-                    transition: 0.4s;
+            .slick-slide {
+                width: 22rem !important;
+                margin-left: 2.5rem;
 
-                    &:hover{
-                        transform: scale(1.2);
-                    }
-                }
-
-                .img1{
-                    width: 40rem;
-                    position: absolute;
-                    top: 0;
-                    left: -9rem;
-                }
-            }
-
-            .placeDetails{  
-                text-align: end;
-                margin-inline: 1.5rem;
-                position: absolute;
-                bottom: -11.5rem; 
-                right: 0;
-                position: relative;
-
-
-                .eachDetail{
-                    display: flex;
-                    flex-direction: row-reverse;
+                .eachPlace{
+                    width: 22rem !important;
+                    height: 36rem;
+                    border-radius: 1rem;
+                    box-shadow: 0px 0px 7px 3px #e2e2e2;
+                    align-content: center;
+                    overflow: hidden;
+                    position: relative;
                     
-                    h3{
-                        font-size: 22px;
-                        margin-bottom: 0.5rem;
-                        width: 15rem;
-                        cursor: pointer;
-
-                        span{
-                            font-weight: 500;
+                    .placeImg{
+                        width: 100%;
+                        height: 26rem;
+                        overflow: hidden;
+                        // border-radius: 1rem;
+                        position: relative;
+                        position: absolute;
+                        top: 0;
+                        border-top-right-radius: 1rem;
+                        border-top-left-radius: 1rem;
+                        
+                        img{
+                            border-top-right-radius: 1rem;
+                            border-top-left-radius: 1rem;
+                            width: 100%;
+                            // height: 30rem;
+                            margin-bottom: 1rem;
+                            position: absolute;
+                            bottom: -2.5rem;
+                            transition: 0.4s;
+            
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+            
+                        .img1{
+                            width: 40rem;
+                            position: absolute;
+                            top: 0;
+                            left: -9rem;
                         }
                     }
-
-                    .price{
-                        font-size: 20px;
-                        position: absolute;
-                        left: 0;
-                    }
-                }
-
-                p{
-                    font-size: 20px;
-                    .paperPlaneIcon{
-                        transform: rotate(30deg);
-                        margin-left: 0.5rem;
-                    }
-                }
-            }
-
-            &:last-child .placeDetails{
-                bottom: -13rem;
-            }
             
-        }
+                    .placeDetails{  
+                        text-align: end;
+                        margin-inline: 1.5rem;
+                        position: absolute;
+                        bottom: -12rem; 
+                        right: 0;
+                        position: relative;
+                        
+                        h3{
+                            font-size: 22px;
+                            margin-bottom: 0.5rem;
+                            cursor: pointer;
         
+                            span{
+                                font-weight: 500;
+                            }
+                        }
+                        
+                        .eachDetail{
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            .price{
+                                font-size: 20px;
+                            }
+                            
+                            p{
+                                font-size: 20px;
+                                .paperPlaneIcon{
+                                    transform: rotate(30deg);
+                                    margin-left: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .prevArrow, .nextArrow{

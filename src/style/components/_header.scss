@@ -7,6 +7,7 @@
         padding-top: 2rem;
         transform: translateX(5rem);
         animation: imgAni 2.5s;
+        position: relative;
 
         @keyframes imgAni {
             0%{
@@ -20,8 +21,42 @@
 
         .touristImg{
             width: 34rem;
+            height: 37.3rem;
         }
 
+        .airplane1, .airplane2{
+            position: absolute;
+        }
+        
+        .airplane1 {
+            top: 21rem;
+            left: 12.3rem;
+            animation: orbit1 10s linear infinite;
+        }
+        
+        .airplane2 {
+            top: 21.2rem;
+            left: 12.3rem;
+            animation: orbit2 10s linear infinite;
+        }
+
+        @keyframes orbit1 {
+            0% {
+                transform: rotate(0deg) translateX(16rem) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(16rem) rotate(-360deg);
+            }
+        }
+
+        @keyframes orbit2 {
+            0% {
+                transform: rotate(180deg) translateX(14.5rem) rotate(-180deg);
+            }
+            100% {
+                transform: rotate(540deg) translateX(14.5rem) rotate(-540deg);
+            }
+        }
     }
     
     .headerContent{
@@ -84,4 +119,130 @@
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+// responsive
+
+// tablet
+
+@media (max-width: 919px){
+    .header{
+        .headerImg{
+            margin-right: 13rem;
+
+            .touristImg{
+                width: 22rem;
+                height: fit-content;
+            }
+
+            .airplane1 {
+                top: 14rem;
+                left: 7.3rem;
+                animation: orbit1 10s linear infinite;
+            }
+            
+            .airplane2 {
+                top: 14rem;
+                left: 7rem;
+                animation: orbit2 10s linear infinite;
+            }
+    
+            @keyframes orbit1 {
+                0% {
+                    transform: rotate(0deg) translateX(10.3rem) rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg) translateX(10.3rem) rotate(-360deg);
+                }
+            }
+    
+            @keyframes orbit2 {
+                0% {
+                    transform: rotate(180deg) translateX(9.3rem) rotate(-180deg);
+                }
+                100% {
+                    transform: rotate(540deg) translateX(9.3rem) rotate(-540deg);
+                }
+            }
+        }
+        
+        .headerContent{
+            h3{
+                font-size: 18px;
+            }
+    
+            h1{
+                font-size: 34px;
+            }
+    
+            p{
+                &:first-of-type{
+                    font-size: 20px;
+                    width: 20rem;
+                }
+    
+                &:last-of-type{
+                    font-size: 16px;
+                    margin-top: 1rem;
+                }
+            }
+    
+            button{
+                margin-top: 2rem;
+                padding: 0.8rem 2.8rem;
+            }
+        }
+    }    
+}
+
+
+
+
+
+
+// mobile
+
+@media (max-width: 480px){
+    .header{
+        margin-top: 2rem;
+        .headerImg{
+            display: none;
+        }
+        
+        .headerContent{
+            margin-left: 5.8rem;
+            
+            h3{
+                font-size: 16px;
+            }
+    
+            h1{
+                font-size: 30px;
+            }
+    
+            p{
+                &:first-of-type{
+                    font-size: 18px;
+                    width: 24rem;
+                }
+    
+                &:last-of-type{
+                    font-size: 14px;
+                }
+            }
+    
+            button{
+                padding: 0.8rem 2.5rem;
+            }
+        }
+    }    
+
 }
