@@ -16,10 +16,10 @@
 
         &::before{
             width: 12.5%;
+            right: 35.5rem;
             height: 0.5rem;
             background-color: $mainColor;
             border-radius: 8px;
-            right: 35.5rem;
         }
         
         &::after{
@@ -37,9 +37,12 @@
         justify-content: space-between;
 
         .eachFeature{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             img{
                 width: 11rem;
-                margin-left: 3rem;
             }
 
             h3{
@@ -56,4 +59,112 @@
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// responsive
+
+
+// tablet
+
+@media (max-width: 991px){
+    .features{
+        margin-top: 2rem;
+
+        h2{
+            font-size: 26px;
+            margin-bottom: 4rem;
+    
+            &::before{
+                width: 21%;
+                right: 16.5rem;
+            }
+            
+            &::after{
+                width: 5%;
+                left: 16.5rem;
+            }
+        }
+    
+        .allFeatures{
+            justify-content: center;
+            column-gap: 4rem;
+            row-gap: 2rem;
+            flex-wrap: wrap;
+    
+            .eachFeature{
+                img{
+                    width: 8rem;
+                }
+    
+                h3{
+                    font-size: 18px;
+                    margin-bottom: 0.5rem;
+                }
+                
+                p{
+                    width: 18rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// mobile
+
+@media (max-width: 480px){
+    .features{
+        margin-top: -1rem;
+        margin-inline: 2rem;
+
+        h2{
+            font-size: 22px;
+            margin-bottom: 2rem;
+    
+            &::before{
+                width: 33.5%;
+                right: 5rem;
+            }
+            
+            &::after{
+                width: 12%;
+                left: 5.5rem;
+            }
+        }
+    
+        .allFeatures{
+            row-gap: 1.5rem;
+    
+            .eachFeature{
+                img{
+                    width: 6rem;
+                }
+    
+                h3{
+                    font-size: 16px;
+                    margin-bottom: 0.5rem;
+                }
+                
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
 }

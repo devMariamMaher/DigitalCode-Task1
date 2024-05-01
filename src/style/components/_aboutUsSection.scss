@@ -60,3 +60,136 @@
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+// responsive
+
+
+// tablet
+
+@media (max-width: 991px){
+    .aboutUsSection{
+        margin-top: 2rem;
+        padding-block: 3rem;
+    
+        .aboutUsImg{
+            img{
+                width: 20rem;
+                margin-left: 0rem;
+                margin-right: 2rem;
+            };
+        }
+    
+        .aboutUsContent{
+            width: 100%;
+    
+            h3{
+                margin-right: 5rem;
+                margin-bottom: 0rem;
+                
+                &::before{
+                    width: 14%;
+                    height: 0.3rem;
+                    background-color: $mainColor;
+                    border-radius: 8px;
+                    top: 1.1rem;
+                    right: -5rem;
+                }
+                
+                &::after{
+                    width: 8%;
+                    top: 1rem;
+                    right: -2rem;
+                    border-style: none none dotted;
+                    border-width: 8px;
+                    border-color: $mainColor;
+                }    
+            }
+    
+            h2{
+                font-size: 26px;
+                margin-bottom: 0.5rem;
+            }
+    
+            p{
+                width: 0rem;
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// mobile
+
+@media (max-width: 480px){
+    .aboutUsSection{
+        margin-top: 2rem;
+        padding-inline: 2rem;
+        padding-block: 2rem;
+        flex-direction: column-reverse;
+    
+        .aboutUsImg{
+            img{
+                width: 16rem;
+                margin-inline: 50%;
+                transform: translate(-50%);
+                margin-top: 2rem
+            };
+        }
+    
+        .aboutUsContent{    
+            h3{
+                margin-right: 4.5rem;
+                margin-bottom: 0rem;
+                
+                &::before{
+                    width: 14%;
+                    height: 0.3rem;
+                    background-color: $mainColor;
+                    border-radius: 8px;
+                    top: 1.1rem;
+                    right: -4.5rem;
+                }
+                
+                &::after{
+                    width: 8%;
+                    top: 1rem;
+                    right: -2rem;
+                    border-style: none none dotted;
+                    border-width: 8px;
+                    border-color: $mainColor;
+                }    
+            }
+    
+            h2{
+                font-size: 22px;
+                margin-bottom: 0.5rem;
+            }
+    
+            p{
+                width: 0rem;
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
+
+}

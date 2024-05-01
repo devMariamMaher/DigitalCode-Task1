@@ -148,3 +148,134 @@ footer{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// responsive
+
+
+// tablet
+
+@media (max-width: 991px){
+    footer{
+        height: fit-content;
+        
+        .footerTop{
+            flex-wrap: wrap;
+            gap: 3rem;
+            padding-inline: 5rem;
+            padding-top: 2rem;
+            
+            .footerContent{
+                &:last-of-type{
+                    height: 9rem;
+                    width: 18rem;
+                }
+
+                .appleBtn{
+                    span{
+                        top: 0.1rem;
+                        left: 12rem;
+                        font-size: 10px;
+                    }
+                }
+    
+                .androidBtn{
+                    width: 9rem;
+                    top: 2.6rem;
+                }
+    
+                .socialMedia{
+                    bottom: 0;
+                    right: 0rem;
+                }
+    
+            }
+        }
+    
+        .footerBottom{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+    
+            p{
+                .copyrights{
+                    right: 17rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// mobile
+
+@media (max-width: 480px){
+    footer{
+        height: fit-content;
+        
+        .footerTop{
+            flex-direction: column;
+            gap: 1rem;
+            padding-inline: 2rem;
+            
+            .footerContent{
+                .about{
+                    width: fit-content;
+                }
+
+                &:last-of-type{
+                    height: 9rem;
+                    width: unset;
+                }
+
+                .appleBtn{
+                    span{
+                        top: 0.1rem;
+                        left: 14.5rem;
+                        font-size: 10px;
+                    }
+                }
+    
+                .androidBtn{
+                    width: 9rem;
+                    top: 2.6rem;
+                    left: 3rem;
+                }
+    
+                .socialMedia{
+                    bottom: -0.5rem;
+                    right: 0rem;
+                }
+    
+            }
+        }
+    
+        .footerBottom{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+    
+            p{
+                .copyrights{
+                    right: 1.5rem;
+                }
+            }
+        }
+    }
+
+}

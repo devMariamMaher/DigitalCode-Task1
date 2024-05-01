@@ -116,9 +116,7 @@ nav{
 
 // tablet
 @media (max-width: 991px){
-    nav{
-        position: relative;
-    
+    nav{        
         .logo{
             h3{
                 font-size: 20px;
@@ -126,6 +124,7 @@ nav{
         }
         
         .navTabs{
+            position: relative;
             .navLinks{
                 display: unset;
                 background-color: white;
@@ -133,8 +132,8 @@ nav{
                 width: 45.5rem;
                 padding: 1rem;
                 position: absolute;
-                top: 5rem;
-                left: 5rem;
+                top: 3.5rem;
+                left: 0rem;
                 opacity: 0;
                 visibility: hidden;
                 transition: 0.4s;
@@ -195,8 +194,7 @@ nav{
         
         .navTabs{
             .navLinks{
-                width: 22.8rem;
-                left: 2rem;
+                width: 20.5rem;
 
                 li{
                     margin-left: 0.5rem;

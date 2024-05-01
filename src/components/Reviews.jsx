@@ -3,8 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
-import { HiOutlineDotsHorizontal } from "react-icons/hi";
-import { GoDotFill } from "react-icons/go";
 
 export const Reviews = () => {
     const [slideIndex, setSlideIndex] = useState(0);
@@ -31,12 +29,29 @@ export const Reviews = () => {
     };
 
     const settings = {
-        infinite: false,
         dots: true,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        // initialSlide: 0,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
   return (
@@ -44,7 +59,6 @@ export const Reviews = () => {
         <h2>ما يقوله المستخدمين </h2>
 
         <Slider {...settings} ref={sliderRef} className={activeIndex === slideIndex ? "slide-animate" : ""}>
-        {/* <div className="allReviews"> */}
             <div className="eachReview">
                 <img src="/src/images/user1.png" alt="" />
                 <h3>يوسف إبراهيم</h3>
@@ -54,8 +68,6 @@ export const Reviews = () => {
                     <div className="bg1"></div>
                     <div className="bg2"></div>
                 </div>
-
-                {/* <img className='test' src="/src/images/review1-1-bg.png" alt="" /> */}
             </div>
             
             <div className="eachReview">
@@ -79,19 +91,12 @@ export const Reviews = () => {
                     <div className="bg2"></div>
                 </div>
             </div>
-        {/* </div> */}
         </Slider>
 
         <div className="arrows">
             <IoIosArrowForward className='nextArrow' onClick={nextSlide}/>
             <IoIosArrowBack className='prevArrow' onClick={previousSlide}/>
         </div>
-
-        {/* <div className="navDots">
-            <HiOutlineDotsHorizontal className='3Dots'/>
-            <GoDotFill className='dot1'/>
-            <GoDotFill className='do2'/>
-        </div> */}
     </div>
   )
 }

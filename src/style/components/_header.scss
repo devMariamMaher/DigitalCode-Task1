@@ -2,10 +2,11 @@
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    padding-inline: 5rem;
 
     .headerImg{
         padding-top: 2rem;
-        transform: translateX(5rem);
+        transform: translateX(0rem);
         animation: imgAni 2.5s;
         position: relative;
 
@@ -15,7 +16,7 @@
             }
             
             100%{
-                transform:translateX(5rem) ;
+                transform:translateX(0rem) ;
             }
         }
 
@@ -60,8 +61,8 @@
     }
     
     .headerContent{
-        transform: translateX(-5rem);
-        text-align: right;
+        transform: translateX(0rem);
+        text-align: end;
         align-content: center;
         animation: contentAni 2.5s;
 
@@ -71,7 +72,7 @@
             }
             
             100%{
-                transform:translateX(-5rem) ;
+                transform:translateX(0rem) ;
             }
         }
 
@@ -91,7 +92,7 @@
             &:first-of-type{
                 font-size: 40px;
                 font-weight: 500;
-                width: 40rem;
+                align-content: flex-end;
             }
 
             &:last-of-type{
@@ -135,8 +136,9 @@
 
 @media (max-width: 919px){
     .header{
+        height: 28rem;
         .headerImg{
-            margin-right: 13rem;
+            // margin-right: 13rem;
 
             .touristImg{
                 width: 22rem;
@@ -175,6 +177,9 @@
         }
         
         .headerContent{
+            text-align: end;
+            animation: contentAni 1.3s;
+            
             h3{
                 font-size: 18px;
             }
@@ -186,7 +191,7 @@
             p{
                 &:first-of-type{
                     font-size: 20px;
-                    width: 20rem;
+                    // width: calc(100% - 2%);
                 }
     
                 &:last-of-type{
@@ -213,12 +218,16 @@
 @media (max-width: 480px){
     .header{
         margin-top: 2rem;
+        padding-inline: 2rem;
+        height: 26rem;
+
         .headerImg{
             display: none;
         }
         
         .headerContent{
-            margin-left: 5.8rem;
+            width: 100%;
+            height: fit-content;
             
             h3{
                 font-size: 16px;
@@ -231,7 +240,7 @@
             p{
                 &:first-of-type{
                     font-size: 18px;
-                    width: 24rem;
+                    width: 100%;
                 }
     
                 &:last-of-type{
