@@ -15,7 +15,7 @@ export const Navbar = () => {
         <div className="logo">
             <Link to="/">
                 <h3>اكتشف</h3>
-                <img src="/src/images/airplane.png"/>
+                <img src="/images/airplane.png"/>
             </Link>
         </div>
 

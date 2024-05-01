@@ -4,7 +4,7 @@ import { FaApple } from 'react-icons/fa6'
 export const DownloadApp = () => {
   return (
     <div className='downloadApp'>
-        <img src="/src/images/download-app-bg.png" alt="" />
+        <img src="/images/download-app-bg.png" alt="" />
 
         <div className="dAContent">
             <h2>حمل الان التطبيق واستمتع بتكلفة رحلات ارخص واوفر لك ولعائلتك </h2>
@@ -14,7 +14,7 @@ export const DownloadApp = () => {
                     <button><span className='appleIcon'><FaApple /></span><span>Download on the</span>App Store</button>
                     
                 </div>
-                <img src="/src/images/google-play.png" alt="" className='androidBtn' />
+                <img src="/images/google-play.png" alt="" className='androidBtn' />
             </div>
         </div>
     </div>

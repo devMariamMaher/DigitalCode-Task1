@@ -15,7 +15,7 @@ export const Footer = () => {
                 <div className="footerLogo">
                     <Link to="/">
                         <h3>اكتشف</h3>
-                        <img src="/src/images/airplane.png"/>
+                        <img src="/images/airplane.png"/>
                     </Link>
                 </div>
                 <p className='about'>اكتشف" هو تطبيق سياحي متكامل يهدف إلى تسهيل تجربة السفر للمسافرين عبر توفير معلومات شاملة ومميزات فريدة. يقدم التطبيق قائمة بالأماكن السياحية والعروض في العديد من الوجهات السياحية في جميع أنحاء العالم، مما يسمح للمستخدمين بتخطيط رحلاتهم بسهولة وثقة.</p>
@@ -45,7 +45,7 @@ export const Footer = () => {
                     <button><span className='appleIcon'><FaApple /></span>App Store</button>
                     <span>Download on the</span>
                 </div>
-                <img src="/src/images/google-play.png" alt="" className='androidBtn' />
+                <img src="/images/google-play.png" alt="" className='androidBtn' />
 
                 <div className="socialMedia">
                     <FaFacebook className='eachIcon'/>

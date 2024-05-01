@@ -61,19 +61,19 @@ export const EktshfServices = () => {
         <Slider {...settings} ref={sliderRef} className={activeIndex === slideIndex ? "slide-animate" : ""}>
             {/* <div className="allServices"> */}
                 <div className="eachService">
-                    <img src="/src/images/audio-message.png" alt="" />
+                    <img src="/images/audio-message.png" alt="" />
                     <h3>ميزة التوجيه الصوتي</h3>
                     <p>يتيح التطبيق التوجيه الصوتي للمستخدمين أثناء السفر  وجعل الرحله أكثر متعة وسهولة وفرادة.</p>
                 </div>
                 
                 <div className="eachService">
-                    <img src="/src/images/tour-guide.png" alt="" />
+                    <img src="/images/tour-guide.png" alt="" />
                     <h3>مرشدين سياحيين افتراضيين</h3>
                     <p>يمكن للمستخدمين التواصل مع مرشدين سياحيين افتراضيين للحصول على استشارات ونصائح مباشرة.</p>
                 </div>
                 
                 <div className="eachService">
-                    <img src="/src/images/travel-insurance.png" alt="" />
+                    <img src="/images/travel-insurance.png" alt="" />
                     <h3>تنبيهات الأمان والسفر</h3>
                     <p>يقدم التطبيق تنبيهات فورية حول أي مشاكل أمنية أو تغييرات في الجدول الزمني للرحلات.</p>
                 </div>

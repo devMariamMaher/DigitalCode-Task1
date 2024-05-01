@@ -63,7 +63,7 @@ export const PlacesInEgypt = () => {
         {/* <div className="allPlaces"> */}
             <div className="eachPlace">
                 <div className="placeImg">
-                    <img src="/src/images/image3.png" alt=""  className='img1'/>
+                    <img src="/images/image3.png" alt=""  className='img1'/>
                 </div>
 
                 <div className="placeDetails">
@@ -77,7 +77,7 @@ export const PlacesInEgypt = () => {
             
             <div className="eachPlace">
                 <div className="placeImg">
-                    <img src="/src/images/image7.png" alt=""/>
+                    <img src="/images/image7.png" alt=""/>
                 </div>
 
                 <div className="placeDetails">
@@ -91,7 +91,7 @@ export const PlacesInEgypt = () => {
             
             <div className="eachPlace">
                 <div className="placeImg">
-                    <img src="/src/images/image8.png" alt="" />
+                    <img src="/images/image8.png" alt="" />
                 </div>
 
                 <div className="placeDetails">

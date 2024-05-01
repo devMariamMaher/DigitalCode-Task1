@@ -4,7 +4,7 @@ export const AboutUsSection = () => {
   return (
     <div className='aboutUsSection'>
         <div className="aboutUsImg">
-            <img src="/src/images/beach.png" alt="" />
+            <img src="/images/beach.png" alt="" />
         </div>
 
         <div className="aboutUsContent">

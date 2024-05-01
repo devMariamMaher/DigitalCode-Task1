@@ -4,11 +4,11 @@ export const DiscoverDestinations = () => {
   return (
     <div className='discoverDestinations'>
         <div className="dDGrid">
-            <img src="/src/images/image1.png" alt="" />
-            <img src="/src/images/image2.png" alt="" />
-            <img src="/src/images/image3.png" alt="" />
-            <img src="/src/images/image4.png" alt="" />
-            <img src="/src/images/image5.png" alt="" />
+            <img src="/images/image1.png" alt="" />
+            <img src="/images/image2.png" alt="" />
+            <img src="/images/image3.png" alt="" />
+            <img src="/images/image4.png" alt="" />
+            <img src="/images/image5.png" alt="" />
         </div>
 
         <div className="dDContent">
