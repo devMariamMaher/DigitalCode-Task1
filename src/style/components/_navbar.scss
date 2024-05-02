@@ -86,6 +86,11 @@ nav{
                 }
     
                 span{
+                    &:first-of-type{
+                        position: relative;
+                        top: 0.1rem;
+                    }
+
                     &:last-of-type{
                         position: absolute;
                         top: 0.2rem;
@@ -161,8 +166,11 @@ nav{
     
             .navIcons{
                 .menuIcon {
+                    font-size: 20px;
                     display: block;
                     margin-right: 1rem;
+                    position: relative;
+                    top: 0.1rem;
             
                     #menu{
                         display: none;
