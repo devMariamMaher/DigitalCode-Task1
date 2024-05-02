@@ -216,9 +216,10 @@
     
         .slick-slider{
             .slick-list{
-                width: 42rem;
+                width: 19rem;
                 height: 25rem;
-                padding-left: 2.5rem;
+                padding-left: 1.5rem;
+                margin: auto;
                 
                 .slick-track{
                     .slick-slide {
@@ -255,7 +256,7 @@
         }
     
         .nextArrow{
-            right: -0.8rem;
+            right: -0.3rem;
         }
     }
 

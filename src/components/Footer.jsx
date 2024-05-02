@@ -41,17 +41,20 @@ export const Footer = () => {
             
             <div className="footerContent">
                 <h4>أستكشف التطبيق</h4>
-                <div className="appleBtn">
-                    <button><span className='appleIcon'><FaApple /></span>App Store</button>
-                    <span>Download on the</span>
-                </div>
-                <img src="/images/google-play.png" alt="" className='androidBtn' />
 
-                <div className="socialMedia">
-                    <FaFacebook className='eachIcon'/>
-                    <FaInstagram className='eachIcon'/>
-                    <FaXTwitter className='eachIcon'/>
-                    <IoLogoLinkedin className='eachIcon'/>
+                <div className="footerBtns">
+                    <div className="appleBtn">
+                        <button><span className='appleIcon'><FaApple /></span>App Store</button>
+                        <span>Download on the</span>
+                    </div>
+                    <img src="/images/google-play.png" alt="" className='androidBtn' />
+
+                    <div className="socialMedia">
+                        <FaFacebook className='eachIcon'/>
+                        <FaInstagram className='eachIcon'/>
+                        <FaXTwitter className='eachIcon'/>
+                        <IoLogoLinkedin className='eachIcon'/>
+                    </div>
                 </div>
             </div>
         </div>

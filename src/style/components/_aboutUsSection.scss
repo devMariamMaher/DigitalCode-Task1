@@ -149,9 +149,11 @@
         .aboutUsImg{
             img{
                 width: 16rem;
-                margin-inline: 50%;
                 transform: translate(-50%);
-                margin-top: 2rem
+                margin-top: 2rem;
+                margin-right: 0;
+                position: relative;
+                left: 50%;
             };
         }
     

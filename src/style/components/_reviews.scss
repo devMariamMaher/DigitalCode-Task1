@@ -150,6 +150,10 @@
         }
 
         .slick-dots{
+            width: unset;
+            left: 50%;
+            transform: translateX(-50%);
+
             button:before, .slick-active button:before{
                 font-size: 8px;
                 opacity: 1;
@@ -335,7 +339,7 @@
 @media (max-width: 480px){
     .reviews{
         margin-top: 5rem;
-        margin-inline: -1.2rem;
+        margin-inline: 0rem;
     
         h2{
             font-size: 26px;
@@ -343,19 +347,19 @@
             position: relative;
     
             &::before{
-                width: 66.8%;
-                right: 2rem;
+                width: 53.8%;
+                right: 4rem;
             }
             
             &::after{
                 width: 10%;
-                left: 2.2rem;
+                left: 4.2rem;
             }
         }
     
         .slick-slider {
             .slick-list{
-                width: 26rem;
+                width: 24rem;
                 height: 28rem;
                 padding-left: 0.5rem;
     
@@ -384,13 +388,13 @@
                             .bg1{
                                 width: 17.5rem;
                                 height: 19.5rem;
-                                left: 2.8rem;
+                                left: 1.8rem;
                             }
     
                             .bg2{
                                 width: 18.5rem;
                                 height: 18rem;
-                                left: 3.8rem;
+                                left: 2.8rem;
                             }
                         }
                 
@@ -398,13 +402,13 @@
                             .bg1{
                                 width: 16.5rem;
                                 height: 21.5rem;
-                                left: 5.8rem;
+                                left: 4.8rem;
                             }
     
                             .bg2{
                                 width: 19.5rem;
                                 height: 21rem;
-                                left: 3.2rem;
+                                left: 2.2rem;
                             }
                         }
     
@@ -412,13 +416,13 @@
                             .bg1{
                                 width: 16.5rem;
                                 height: 20.8rem;
-                                left: 6.8rem;
+                                left: 5.8rem;
                             }
     
                             .bg2{
                                 width: 18.5rem;
                                 height: 19rem;
-                                left: 3.8rem;
+                                left: 2.8rem;
                             }
     
                         }
