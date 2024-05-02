@@ -139,6 +139,7 @@ footer{
 
         p{
             text-align: center;
+            color: #808080;
             padding-right: 1rem;
             position: relative;
 
@@ -288,8 +289,9 @@ footer{
             padding-bottom: 1rem;
     
             p{
+                font-size: 14px;
                 .copyrights{
-                    right: 1.5rem;
+                    right: 2rem;
                 }
             }
         }

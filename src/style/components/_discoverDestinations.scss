@@ -114,6 +114,17 @@
     
         .dDGrid{
             margin-top: 2rem;
+            
+            img{
+                width: 8rem;
+                
+                &:first-of-type{
+                    width: 10rem;
+                    top: 2rem;
+                    left: 3.5rem; 
+                }
+            }
+
         }
     
         .dDContent{    

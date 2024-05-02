@@ -218,14 +218,14 @@
             .slick-list{
                 width: 19rem;
                 height: 25rem;
-                padding-left: 1.5rem;
+                padding-left: 2rem;
                 margin: auto;
                 
                 .slick-track{
                     .slick-slide {
                         .eachService{
-                            width: 16rem !important;
-                            height: 20rem;
+                            width: 15rem !important;
+                            height: 19rem;
                             
                             img{
                                 width: 5rem;
@@ -252,11 +252,11 @@
         }
         
         .prevArrow{
-            left: -0.2rem;
+            left: -1rem;
         }
     
         .nextArrow{
-            right: -0.3rem;
+            right: -1rem;
         }
     }
 
